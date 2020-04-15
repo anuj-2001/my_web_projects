@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Passwordtor</title>
+		<link rel="stylesheet" type="text/css" href="">
+		<link rel="stylesheet" type="text/css" href="">
+		<link rel="stylesheet" type="text/css" href="">
+	</head>
+	<body>
+		<div class="container">
+				<h1 class="title-has-text-centered">Passwordtor</h1>
+				
+				
+				<div class="field-length">
+						<label>Length</label>
+						<input class="input" (input)="onChangeLength($event.target.value)" placeholder="" />
+				</div>
+		
+				<br>
+				<div class="field-control">
+						<label class="checkbox">
+						<input (change)="onChangeUseLetters()" type="checkbox" />
+						Use Letters
+						</label>
+					
+						<br><br>
+
+						<label class="checkbox">
+						<input (change)="onChangeUseNumbers()" type="checkbox" />
+						Use Numbers
+						</label>
+				
+						<br><br>
+					
+						<label class="checkbox">
+						<input (change)="onChangeUseSymbols()" type="checkbox" />
+						Use Symbols
+						</label>
+				</div>
+				
+
+				<div class="btn-control">
+				
+						<button [disabled]="
+							!(length && (includeLetters || includeSymbols || includeNumbers))
+						" (click)="onButtonClick()" class="button is-link is-fullwidth">
+						Generate
+						</button>
+				</div>
+		
+				<div class="box-control" *ngIf="password">
+						<label>Your Password</label>
+						<input class="input" [value]="password" />
+				</div>
+		</div>
+	</body>
+</html>
