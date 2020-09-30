@@ -1,0 +1,72 @@
+.container{
+    width: 280px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+    border-right: bisque 0.5px solid ;
+    border-top: bisque 0.5px solid;
+    border-left: bisque 0.5px solid;
+    border-bottom: bisque 0.5px solid;
+}
+body{
+    color:rgb(161, 159, 159);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-has-text-centered{
+    border-bottom:0.5px solid;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.field-length{
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+.field-length label{
+        margin-right: 10px;
+}
+
+.field-control{
+    margin-left: 20px;
+}
+
+.btn-control{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+   
+}
+.btn-control button{
+    width: 250px;
+    background-color: white;
+    letter-spacing: 1px;
+    background-color: #c2bcbc;
+    color: black;
+    font-weight: 500;
+    border: white 0.5px solid;
+}
+.box-control{
+    text-align: center;
+}
+.box-control label{
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.box-control input{
+    border: white 0.5px solid;
+    background-color:#c2bcbc ;
+}
+.field-length input{
+    background-color:#c2bcbc ;
+    border: white 0.5px solid;
+    width:250px;
+}
